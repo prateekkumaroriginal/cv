@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16 md:mb-4">
       <section className="mx-auto w-full max-w-3xl space-y-8 bg-background print:space-y-4">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
@@ -181,6 +181,23 @@ export default function Page() {
                   description={project.description}
                   tags={project.techStack}
                   links={project.links}
+                />
+              );
+            })}
+          </div>
+        </Section>
+
+        <Section className="print-force-new-page scroll-mb-16">
+          <h2 className="text-xl font-bold">Open Source Contributions</h2>
+          <div className="grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+            {RESUME_DATA.openSource.map((repo) => {
+              return (
+                <ProjectCard
+                  key={repo.title}
+                  title={repo.title}
+                  description={repo.description}
+                  tags={repo.techStack}
+                  links={repo.links}
                 />
               );
             })}

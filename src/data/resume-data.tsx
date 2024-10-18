@@ -107,13 +107,60 @@ export const RESUME_DATA = {
         "TypeScript",
         "Zustand",
         "Socket.io",
+        "PostgreSQL",
         "Prisma",
         "Clerk",
       ],
       description: "A clean AF Discord clone with voice and video calls.",
       links: {
-        gitHub: "https://github.com/prateekkumaroriginal/unclash",
+        repo: "https://github.com/prateekkumaroriginal/unclash",
         live: "https://unclash.prateekdev.in",
+      }
+    },
+    {
+      title: "Courshell",
+      techStack: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "Prisma",
+        "PostgreSQL",
+        "Razorpay",
+      ],
+      description: "A course marketplace.",
+      links: {
+        repo: "https://github.com/prateekkumaroriginal/courshell/tree/revamp/open-world-site",
+      }
+    },
+    {
+      title: "Courshell Internal",
+      techStack: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "Prisma",
+        "PostgreSQL",
+      ],
+      description: "A course/training platform for an internal organization.",
+      links: {
+        repo: "https://github.com/prateekkumaroriginal/courshell_hal",
+        live: "https://courshell.prateekdev.in",
+      }
+    },
+  ],
+  openSource: [
+    {
+      title: "app.100xdevs",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+      ],
+      description: "Course Platform of Harkirat Singh.",
+      links: {
+        repo: "https://github.com/code100x/cms/pull/512",
+        live: "https://app.100xdevs.com",
       }
     },
   ],
